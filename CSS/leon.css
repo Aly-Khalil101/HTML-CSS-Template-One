@@ -70,13 +70,13 @@ body {
 
 @media (max-width:768px) {
   .special-heading {
-    font-size: 60px;
+    font-size: 45px;
   }
 
-  .special-paragraph {
-    margin: -20px;
-    font-size: 15px;
-  }
+.special-paragraph {
+  margin: -16px 5px;
+  font-size: 15px;
+}
 }
 
 /* End Component */
@@ -106,7 +106,6 @@ body {
 .header .links .icon {
   width: 30px;
   display: flex;
-  ;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
@@ -211,14 +210,13 @@ body {
 /* Start Features */
 .features {
   padding: 60px;
-  padding-bottom: 60px;
   background-color: var(--section-background-color);
 }
 
 .features .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid: gap 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,300px), 1fr));
+   gap: 20px;
 }
 
 .features .feat {
@@ -249,7 +247,7 @@ body {
 
 .services .services-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,300px), 1fr));
   gap: 30px;
   margin-top: 100px;
 }
@@ -322,8 +320,8 @@ body {
 
 .portfolio .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,300px), 1fr));
+  gap: 30px;
   margin-top: 80px;
 }
 
@@ -452,7 +450,7 @@ body {
   font-size: 40px;
   font-weight: 800;
   color: var(--Secondary-color);
-  letter-spacing: -2;
+  letter-spacing: -2px;
   margin-bottom: 15px;
 }
 
@@ -493,3 +491,18 @@ body {
   color: var(--main-color);
 }
 /* End Footer */
+/* @media (max-width: 450px) {
+.features {
+  width: calc(100% + 10vw);
+}
+.features .feat,
+.services .srv,
+.portfolio .card {
+  width: 90%;
+  padding-right: 30px;
+}
+}
+  */
+
+
+
